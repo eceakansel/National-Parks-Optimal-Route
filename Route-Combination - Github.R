@@ -2,9 +2,6 @@ library(readxl)
 library(dplyr)
 library('writexl')     
 
-map(dates2, possibly(testFunction, NA))
-
-
 # Data Prep - Combination Calculation
 
 parks = read_excel("C:/Users/eceak/National Parks Route/data/National Park Coordinates.xlsx")
@@ -13,7 +10,6 @@ origin = parks$`Place Name`
 destination = parks$`Place Name`
 
 combinations = expand.grid(origin, destination)
-
 
 combinations = combinations %>%
   rename(from = Var1,
