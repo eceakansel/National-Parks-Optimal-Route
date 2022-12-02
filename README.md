@@ -2,4 +2,4 @@
 
 ## Tools Used:
 - R
-- Google Maps API
+- Google Cloud (Google Maps API)
